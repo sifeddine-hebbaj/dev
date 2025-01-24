@@ -1,0 +1,18 @@
+services:
+  db-container:
+    image: mysql:latest
+    ports:
+    - 3306
+  prod-db-container:
+    image: mysql:8.0
+    ports:
+    - 3306
+  prod-web-container:
+    image: nginx:stable
+    ports:
+    - 80
+  web-container:
+    image: nginx:latest
+    ports:
+    - 8080
+version: '3.8'
